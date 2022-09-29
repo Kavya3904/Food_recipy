@@ -1,38 +1,101 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nunito:wght@300&display=swap');
+.App{ 
+  
+
+  background-image: linear-gradient(to bottom, #f5f7fa , #c3cfe2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.App1{
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.Appchilddiv {
+ 
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 6px 6px 3px black;
+  padding: 20px 0 20px 0;
+  flex:40%;
+  background-color: #dda15e;
+
+  word-spacing: 3px;
+  font-size: 18px;
+ margin: 20px 10px 20px 10px;
+ 
+}
+div > h1{
+  font-family: 'Kanit', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+ol {
+  text-align: start;
+  counter-reset: item;
+  margin: 0 0 1.5em;
+  padding: 0;}
+
+   ol > li {
+    counter-increment: item;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    text-indent: -1.2rem;}
+
+    ol > li::before {
+      content: counter(item) '.';
+      display: inline-block;
+      font-weight: bold;
+      padding-right: .5rem;      
+      text-align: right;
+      width: 1.5rem;
+    }
+  
+.calories{
+  color: rgb(65, 7, 131);
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-input{
+  margin: 20px 0 20px 0;
+  padding: 0px 10px 0px 10px;
+  font-size: 15px;
+  width: 40%;
+  height: 30px;
+  border-top-left-radius:20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid transparent;
+  font-family: 'Kanit', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+.search-input:focus{
+  outline: none;
 }
+.search-btn{
+  font-size: 17px;
+  width: 100px;
+  height: 32px;
+  background-color: #dda15e;
+  border: 1px solid transparent;
+  border-top-right-radius:20px;
+  border-bottom-right-radius: 20px;
+cursor: pointer;
+font-family: 'Nunito', sans-serif;
+font-weight: 900;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.search-form{
+  background-color:#bc6c25;
 }
